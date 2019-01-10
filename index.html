@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name = "author" content = "Lijia Liu & Zichen Wang">
+		<title>Home page</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	
+	<body id = "pageBody">
+		<h1>The Diamond shining in the Sheffield - the best place for studing</h1>
+		<!--Set navigation according to Fitz's law-->	
+		<nav>
+			<ul>
+				<a href="index.html" accesskey = "h"><li>Home</li></a>
+				<a href="areas.html" accesskey = "v"><li>Various areas</li></a>
+				<a href="life in the diamond.html" accesskey = "l"><li>Life in the Diamond</li></a>
+				<a href="Cafe.html" accesskey = "n"><li>Diamond cafeteria</li></a>
+				<a href="Contact.html" accesskey = "c"><li>Contact us</li></a>
+				<a href="accessibility.html" accesskey = "a"><li>Accessibility</li></a>
+			</ul>
+		</nav>
+		<main>
+			<!--Use section element to achieve RWD -->	
+			<section id = "content" >
+				<!--Use box model and block element to show the picture-->
+				<div>
+					<figure id = "appearance" >
+						<a href="diamond.jpg" accesskey = "1"><img src="diamond.jpg" alt="the appearance of the diamond" id = "indexFigure"></a>
+						<figcaption>"figure A: the appearance of the diamond"</figcaption>
+					</figure>
+				</div>
+				<p class="mainText">
+				As a engineering student, The Diamond could probably be the most important space for us, and we would spend most of our time in this building. The Diamond was completed in 2015, composed of 6 floors and various teaching and practicing areas for engineering student. All of lecture theaters are on the ground floor and you can enter any of these theaters without a university ID card, which means every citizen in the Sheffield can have all of university lectures at the Diamond. You will need a university card to enter the studying space from 1st floor to 4th floor, but these floors are open to all of students in the university of Sheffield, not only the engineering students. All of students can use computer rooms and the library area to grasp the knowledge, and have a incredible experience in this amazing building.
+				</p>
+			</section>
+			<!--Use aside element to achieve RWD -->	
+			<aside id = "sideContent">
+				<h1 class = "list">Pages functions</h1>
+				<ul>
+					<li>Home page..........Brief introduction of the Diamond</li></br>
+					<li>Various areas page..........Introduction of areas in the Diamond</li></br>
+					<li>Life in the Diamond page..........A typical day in The diamond for CS student</li></br>
+					<li>Diamond cafeteria page..........Introduction of the Diamond cafeteria</li></br>
+					<li>Contact us page..........Contact details of developers and place to leave your valuable comments</li></br>
+					<li>Accessibility page..........the Accessibility statements for our pages</li>
+				</ul>
+			</aside>
+		</main>
+		<footer>
+			<p>&copy; Zichen Wang, Lijia Liu, 2017</p>
+		</footer>
+	</body>
+</html>
