@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contact us</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	
+	<body id = "pageBody">
+		<h1>Contact Us </h1>
+		<nav>
+			<ul>
+				<a href="index.html" accesskey = "h"><li>Home</li></a>
+				<a href="areas.html" accesskey = "v"><li>Various areas</li></a>
+				<a href="life in the diamond.html" accesskey = "l"><li>Life in the Diamond</li></a>
+				<a href="Cafe.html" accesskey = "n"><li>Diamond cafeteria</li></a>
+				<a href="Contact.html" accesskey = "c"><li>Contact us</li></a>
+				<a href="accessibility.html" accesskey = "a"><li>Accessibility</li></a>
+			</ul>
+		</nav>
+		<main>
+			<section id = "content">
+			<h1>Contact details of the developers</h1>
+			<p class = mainText>
+				&emsp; &emsp; Lijia Liu:</br>
+				&emsp; &emsp; Phone number: (44)7761950957</br>
+				&emsp; &emsp; Email address: lliu48@sheffield.ac.uk</br>
+				</br>
+				&emsp; &emsp; Zichen Wang:</br>
+				&emsp; &emsp; Phone number: (44)7745133325</br>
+				&emsp; &emsp; Email address: zwang135@sheffield</br>
+			</p>
+			<h1>
+				If you have any problem to access our website or have some advices about the development of  this website, you can contact us or leave your valuable comments hare without hestitation.
+			</h1>
+			</section>
+			<!--create a form to let users input their email address and comments-->	
+			<form id= "sideContent" action = "http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl" method = "get">
+				<input type = "hidden" name  = "recipient" value = "zwang135@sheffield.ac.uk">
+				<p>
+					<label for = "email">Your email address : </lable>
+					<input type = "email" name = "email" id = "email" placeholder = "Please input your email address... " size = "42" accesskey = "i">
+				</p>
+				<p>
+					<textarea name = "comment" rows = "5" cols = "50" accesskey = "o"> Type your comments here...</textarea> 
+				</p>
+				<p>
+					<input type = "submit" id = "submit" name = "submit" value = "Submit" accesskey = "s">
+					<input type = "reset" id = "reset" value = "Reset" accesskey = "r">
+				</p>
+			</form>
+		</main>
+		<footer>
+			<p>&copy; Zichen Wang, Lijia Liu, 2017</p>
+		</footer>
+	</body>
+</html>

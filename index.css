@@ -1,0 +1,166 @@
+#pageBody{
+	width: 95%;
+	height:95%;
+	margin: 0px auto;
+	background-image: url(background.jpg)
+	
+}
+@media screen and (max-width: 767px) {
+	#pageBody{
+		width: auto;
+		height:95%;
+		border: none;
+	}
+}
+/*Use multiple breaking point to make the font size best suited */
+h1{
+	text-align: center;
+	color: black;
+	font-size: 2em;
+	font-family: Fantasy;
+}
+@media screen and (max-width: 920px) {
+	h1{
+		font-size: 1.5em;
+	}
+}
+@media screen and (max-width: 630px) {
+	h1{
+		font-size: 1em;
+	}
+}
+@media screen and (max-width: 450px) {
+	h1{
+		font-size: 0.8em;
+	}
+}
+/*if the width of window less than 850px, the nav would display in list style*/
+nav{
+	margin: 4px;
+	padding:5px;
+	border: 1px solid gray;
+	border-radius: 20pt;
+	background: rgb(18,53,85);
+	flex : 60%;
+
+}
+/*if the width of window less than 850px, the nav would display in list style*/
+nav ul li
+{
+
+	background-color: rgb(0,0,0);
+	border: 1px white solid;
+	padding: 0 2% 0 2%;
+	list-style-type: none;
+	color: white;
+	border-radius: 20pt;
+	margin: 0 auto;
+}
+/*if the width of window more than 850px, the nav would display in line*/
+@media screen and (min-width: 850px) {
+	nav ul li{
+		display:inline;
+		border: 1px white solid;
+		padding: 0 2% 0 2%;
+		color: white;
+		height:2em;
+
+	}
+}
+/*set the flex block, and decide the style to display when the width of window bigger than 850px*/
+main{
+	min-height: 1000px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+	}
+/*set the flex block, and decide the order to display when the width of window bigger than 850px*/
+#content{
+	 margin: 5px;
+     padding: 5px;
+     border: 1px solid grey;
+     border-radius: 20pt;
+     background: rgb(230,230,230);
+     flex: 40%;
+     order: 2;
+}
+/*set the flex block, and decide the order to display when the width of window bigger than 850px*/
+#sideContent{
+	margin: 5px;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 20pt;
+    background: rgb(80,80,80);
+    flex: 40%;
+    order: 3;
+	color: white;
+}
+/*set the basic shape and max width of figures*/
+main figure img{
+	border-radius: 20pt;
+	max-width: 100%;
+}
+/*set the shape and relative size of figure in home page*/
+#appearance{
+	align: center;
+	width : 100%;
+	margin:0em;
+	max-width: 800px;
+}
+/*set the size and position of figure caption*/
+main figcaption{
+	text-align: center;
+	font-size: 0.75em;
+}
+*.list{
+	color: white;
+}
+/*set the relative size and max width of  figures*/
+*.mainFigure{
+	align: center;
+	width : 40%;
+	margin: 1em;
+	float: left;
+	max-width:250px;
+}
+/*set the size of box*/
+main div{
+	border-bottom: 1px solid grey;
+	width: 100%;
+	min-height: 33%;
+}
+/*when the width of window less than 850px, deside  the order of  2 part of  main body, set the relative size of figures and figure caption*/
+@media screen and (max-width: 850px) {
+	main{
+
+		flex-direction: column;
+	}
+	#content{
+		order: 0;
+	}
+	#sideContent{
+		order: 1;
+	}
+	*.mainFigure{
+	width : 15%;
+    }
+	main figcaption{
+	text-align: center;
+	font-size: 0.5em;
+    }
+}
+main p{
+	font-size: 1.3em;
+}
+footer
+{
+	color: black;
+	display: block;
+	height: 50px;
+	font-size: 0.75em;
+	text-align: center;
+	border-top: 1px solid gray;
+	
+}
+
